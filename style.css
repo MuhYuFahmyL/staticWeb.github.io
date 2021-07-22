@@ -118,6 +118,18 @@ a{
    width: 2vw;
 }
 
+.iconCont{
+   width: 32vw;
+   height: 18vw;
+   border-radius: 1vw;
+}
+
+.iconCont:hover{
+  border-radius: 1vw;
+  border:0.3vw solid #fff;
+  box-shadow: 0.2vw  0.2vw #000;
+}
+
 #floatingButton:active {
    color: #000;
    background-color: rgb(184, 124, 12);
@@ -248,10 +260,10 @@ blockquote {
    align-items: center;
 }
 
-.contentAboutMe{
+.contentPortoFolio,.contentAboutMe{
    background-color: #6e6e6e; 
    width: 100%; 
-   height: 80%; 
+   height: 100%; 
    border-radius: 2vw;
 }
 
