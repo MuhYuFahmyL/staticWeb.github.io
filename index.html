@@ -1,87 +1,94 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="UTF-8"/>
-      <title>My Website</title>
-      <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-      <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-      <link rel="stylesheet" href="./style.css"/>
-      <link href='https://fonts.googleapis.com/css?family=Timmana' rel='stylesheet'>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </head>
-   <body>
-      <header class="webHeader">
-         <div class="logoContainer">
-            <a href="">
-               <span class="fontArialBold">Fahmy's</span>
-               <span class="fontArialBold textYou">Site</span>
-            </a>
-         </div>
-         <nav class="navigasi">
-            <a class="link" href="#aboutMe">About Me</a>
-            <a class="link" href="#portoFolio">Portfolio</a>
-            <a class="link" href="#footer">Contact</a>
-         </nav> 
-      </header>
-
-      <main>
-         <section class="utama" id="utama">
-            <img class="profPict" src="./assets/fahmy.png">
-            <div class="quote">
-               <blockquote>
-                  "Ngoding itu asik. yang ga asik kalo nemu error yang berarti tapi disebabkan 1 karakter doang."
-               </blockquote>
-               <div id="arrow"></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+</head>
+<body>
+    <nav class="header-menu">
+        <ul class="list-menu">
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">PRODUCT</a>
+            </li>
+            <li>
+                <a href="#">GALLERY</a>
+            </li>
+            <li>
+                <a href="#">BLOG</a>
+            </li>
+            <li>
+                <a href="#">INVENTORY</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section class="profile">
+            <div class="avatar">
+                <div class="image-profile">
+                    <img src="./images/pasfoto.jpg" alt="pas-foto" class="pas-foto">
+                </div>
+                <div class="info-profile">
+                    <div class="profile-name">
+                        <span style="font-size: 2vw;font-weight: bold;">Muhammad Yusri Fahmy Lubis</span>
+                        <span style="font-size: 1.5vw;">Posisi</span>
+                    </div>
+                    <div class="button-profile">
+                        <button class="button-kontak">Kontak</button>
+                        <button class="button-resume">Resume</button>
+                    </div>
+                </div>
             </div>
-            <div class="name">
-               <span>
-                  MHD. YUSRI FAHMY LUBIS
-               </span>
+            <hr>
+            <div class="data-profile">
+                <table>
+                    <tr>
+                        <td style="font-weight: 700; width: 10vw;">Availability</td>
+                        <td>Full TIme</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700; width: 10vw;">Usia</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700; width: 10vw;">Lokasi</td>
+                        <td>Jakarta Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700; width: 10vw;">Pengalaman</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700; width: 10vw;">Email</td>
+                        <td>mail@mail.com</td>
+                    </tr>
+                </table>
             </div>
-            <div class="subname">
-               <span>
-                  Developer - MAP-DB #1
-               </span>
-            </div>
-         </section>
-         <section class="utama borderTop" id="aboutMe">
-            <div class="contentAboutMe">
-               <h1>Pengenalan</h1>
-               <p>Saya berasal dari medan dan merupakan <span class="highlight">lulusan S1 Sistem Informasi di Universitas Bina Nusantara</span>. saya sudah berpengalaman sebagai <span class="highlight">web developer selama 3 tahun sejak april 2018</span>. Dari pengalaman tersebut saya memperoleh hardsklii berupa <span class="highlight">PHP dan Javascript Programming</span>. namun ketika menjadi mahasiswa tingkat akhir di S1 Sistem Informasi Universitas Bina Nusantara, saya aktif dalam mengikuti beberapa bootcamp yang memfasilitasi mempelajari <span class="highlight">Oracle database, python dan R</span> dari beberapa platform sertifikasi ternama di Indonesia maupun Global.</p>
-            </div>
-         </section>
-         <section class="utama borderTop" id="portoFolio">
-            <div class="contentPortoFolio">
-               <h1>PortoFolio</h1>
-               <div style="width: 100%; height: 100%; display: flex; justify-content: space-around;"> 
-                     <img src="./assets/management.jpg" class="iconCont">
-                     <img src="./assets/sispenduk.png" class="iconCont">
-               </div>
-            </div>
-         </section> 
-      </main>
-
-      
-      <footer id="footer">
-         <div class="containerContacts">
-            <div class="centeredContent">
-               <span>Contact</span>
-            </div>
-            <div class="centeredContentIcon">
-               <a href="https://github.com/MuhYuFahmyL" target="_blank"><img src="./assets/github.png" class="iconContact"></a>
-               <a href="https://www.instagram.com/muhammad_yusri_fahmy_lubis/" target="_blank"><img src="./assets/instagram.png" class="iconContact"></a>
-               <a href="https://id.linkedin.com/in/muhammad-yusri-fahmy-lubis-663b961ba" target="_blank"><img src="./assets/linkedin.png" class="iconContact"></a>
-               <a href="https://api.whatsapp.com/send?phone=+6281320365685" target="_blank"><img src="./assets/whatsapp.png" class="iconContact"></a>
-            </div>
-         </div>
-         <div class="containerThanks">
-            <div class="thankYou">
-               <span class="fontArial">Thank</span>
-               <span class="fontArial textYou">You</span>
-            </div>
-         </div>
-      </footer>
-      
-      <a id="floatingButton" href="#utama"><i class="fa fa-arrow-up"></i></a>
-   </body>
+        </section>
+        <section class="form">
+            <form action="#" class="formField">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                <label for="role">Role</label>
+                <input type="text" name="role">
+                <label for="availability">Availability</label>
+                <input type="text" name="availability">
+                <label for="age">Age</label>
+                <input type="text" name="age">
+                <label for="lokasi">Lokasi</label>
+                <input type="text" name="lokasi">
+                <label for="years">Years</label>
+                <input type="text" name="years">
+                <label for="email">Email</label>
+                <input type="text" name="email">
+                <input type="button" value="Submit">
+            </form>
+        </section>
+    </div>
+</body>
 </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Assignment 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 10px; font-weight: bold;}
+  .bg-1 { 
+    background-color: #f8f8f8; /* Green */
+    color: #000000;
+  }
+  .bg-2 { 
+    background-color: #f8f8f8; /* Dark Blue */
+    color: #000000;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #000000;
+  }
+  .bg-4 { 
+    background-color: #f8f8f8; /* Black Gray */
+    color: #000;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Hacktiv8</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Profile</a></li>
+                <li><a href="index.html">Portofolio</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorial <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">JQuery</a></li>
+                        <li><a href="#">Codeigniter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><button href="#" class="btn btn-info navbar-btn"><span class="glyphicon glyphicon-user"></span> Daftar</button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container bg-1 text-center" style="padding-top: 70px; padding-bottom: 70px; margin-top: 90px;">
+  <h3 class="margin">Selamat datang di www.hacktiv8.com!</h3>
+  <h5>Tutorial Pemrograman bahasa indonesia terlengkap di muka bumi</h5>
+  <button type="button" class="btn btn-primary">Mulai Belajar!</button>
+</div>
+
+
+<!-- Third Container (Grid) -->
+<div class="container bg-3" style="margin-top: 10px;">    
+  <div class="row">
+    <div class="col-sm-3" style="padding: 10px;">
+      <div style="padding: 5px; border: 1px solid black; background-color: #f8f8f8; border-radius: 10px;">
+        <img src="https://glints.com/id/lowongan/wp-content/uploads/2020/10/JQuery-Logo.wine_.png" class="img-responsive margin" style="width:100%" alt="Image">
+        <h3 style="font-weight: bold;">Tutorial JQuery</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <button type="button" class="btn btn-primary">Lihat!</button>
+      </div>
+    </div>
+    <div class="col-sm-3" style="padding: 10px;">
+      <div style="padding: 5px; border: 1px solid black; background-color: #f8f8f8; border-radius: 10px;">
+        <img src="https://glints.com/id/lowongan/wp-content/uploads/2020/10/JQuery-Logo.wine_.png" class="img-responsive margin" style="width:100%" alt="Image">
+        <h3 style="font-weight: bold;">Tutorial Ionic</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <button type="button" class="btn btn-primary">Lihat!</button>
+      </div>
+    </div>
+    <div class="col-sm-3" style="padding: 10px;">
+      <div style="padding: 5px; border: 1px solid black; background-color: #f8f8f8; border-radius: 10px;">
+        <img src="https://glints.com/id/lowongan/wp-content/uploads/2020/10/JQuery-Logo.wine_.png" class="img-responsive margin" style="width:100%" alt="Image">
+        <h3 style="font-weight: bold;">Tutorial Codeigniter</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <button type="button" class="btn btn-primary">Lihat!</button>
+      </div>
+    </div>
+    <div class="col-sm-3" style="padding: 10px;">
+      <div style="padding: 5px; border: 1px solid black; background-color: #f8f8f8; border-radius: 10px;">
+        <img src="https://glints.com/id/lowongan/wp-content/uploads/2020/10/JQuery-Logo.wine_.png" class="img-responsive margin" style="width:100%" alt="Image">
+        <h3 style="font-weight: bold;">Tutorial Bootstrap</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <button type="button" class="btn btn-primary">Lihat!</button>
+      </div>
+    </div>
+ </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center" style="padding: 8px 0px; margin-top: 10px;">
+    <div class="container">
+        <div class="navbar-header">
+            <p class="navbar-brand">Copyright &copy; 2022 PTP Dev Team, All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
