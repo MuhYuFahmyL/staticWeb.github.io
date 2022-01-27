@@ -163,3 +163,6 @@ input[type=button]{
     background-color: rgba(80, 235, 126, 0.87);
 }
 
+.hideComponent{
+    display: none;
+}
