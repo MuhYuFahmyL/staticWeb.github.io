@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bodyBg{
+            background-color: red;
+        }
+        .on {
+            background-image: url(./images/turned-on.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .off {
+            background-image: url(./images/turned-off.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td><input type="text" name="nama" id="nama"></td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td><input type="text" name="hobi" id="hobi"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">Hasil</td>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td id="hasilnama"></td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td id="hasilhobi"></td>
+        </tr>
+    </table>
+    <button onclick="submit()">Click Me</button>
+</body>
+<script>
+    function colorMyBg(){
+        // document.body.style.background = 'red'
+        document.body.classList.toggle("bodyBg");
+    }
+    function submit(){
+        var nama = document.getElementById('nama').value;
+        var hobi = document.getElementById('hobi').value;
+
+        document.getElementById('hasilnama').innerHTML = nama;
+        document.getElementById('hasilhobi').innerHTML = hobi;
+    }
+    // function welcome(nama, tipe=0){
+    //     let ucapan = [
+    //         'Halo, ',
+    //         'Hi, '
+    //     ]
+
+    //     return ucapan[tipe]+nama
+    // }
+    // var namaUser = prompt("Masukan nama kamu")
+    // var tipeUcapan = prompt("0 atau 1 ?")
+    // console.log(welcome(namaUser,tipeUcapan))
+</script>
+</html>

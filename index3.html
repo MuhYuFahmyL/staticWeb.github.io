@@ -35,8 +35,8 @@
                 </div>
                 <div class="info-profile">
                     <div class="profile-name">
-                        <span style="font-size: 2vw;font-weight: bold;">Muhammad Yusri Fahmy Lubis</span>
-                        <span style="font-size: 1.5vw;">Posisi</span>
+                        <span style="font-size: 2vw;font-weight: bold;" id="hasilnama"></span>
+                        <span style="font-size: 1.5vw;" id="hasilrole"></span>
                     </div>
                     <div class="button-profile">
                         <button class="button-kontak">Kontak</button>
@@ -49,46 +49,68 @@
                 <table>
                     <tr>
                         <td style="font-weight: 700; width: 10vw;">Availability</td>
-                        <td>Full TIme</td>
+                        <td id="hasilavailability"></td>
                     </tr>
                     <tr>
                         <td style="font-weight: 700; width: 10vw;">Usia</td>
-                        <td>17</td>
+                        <td id="hasilage"></td>
                     </tr>
                     <tr>
                         <td style="font-weight: 700; width: 10vw;">Lokasi</td>
-                        <td>Jakarta Indonesia</td>
+                        <td id="hasillokasi"></td>
                     </tr>
                     <tr>
                         <td style="font-weight: 700; width: 10vw;">Pengalaman</td>
-                        <td>2</td>
+                        <td id="hasilyears"></td>
                     </tr>
                     <tr>
                         <td style="font-weight: 700; width: 10vw;">Email</td>
-                        <td>mail@mail.com</td>
+                        <td id="hasilemail"></td>
                     </tr>
                 </table>
             </div>
         </section>
         <section class="form">
-            <form action="#" class="formField">
+            <form class="formField">
                 <label for="name">Name</label>
-                <input type="text" name="name">
+                <input type="text" id="name">
                 <label for="role">Role</label>
-                <input type="text" name="role">
+                <input type="text" id="role">
                 <label for="availability">Availability</label>
-                <input type="text" name="availability">
+                <input type="text" id="availability">
                 <label for="age">Age</label>
-                <input type="text" name="age">
+                <input type="text" id="age">
                 <label for="lokasi">Lokasi</label>
-                <input type="text" name="lokasi">
+                <input type="text" id="lokasi">
                 <label for="years">Years</label>
-                <input type="text" name="years">
+                <input type="text" id="years">
                 <label for="email">Email</label>
-                <input type="text" name="email">
-                <input type="button" value="Submit">
+                <input type="text" id="email">
+                <button onclick="onSubmit()">On Click</button>
             </form>
         </section>
     </div>
 </body>
+<script>
+    function onSubmit(){
+        var nama = document.getElementById("name").value;
+        var role = document.getElementById("role").value;
+        var availability = document.getElementById("availability").value;
+        var age = document.getElementById("age").value;
+        var lokasi = document.getElementById("lokasi").value;
+        var years = document.getElementById("years").value;
+        var email = document.getElementById("email").value;
+        console.log(nama)
+
+        document.getElementById('hasilnama').innerHTML = nama;
+        document.getElementById('hasilrole').innerHTML = role;
+        document.getElementById('hasilavailability').innerHTML = availability;
+        document.getElementById('hasilage').innerHTML = age;
+        document.getElementById('hasillokasi').innerHTML = lokasi;
+        document.getElementById('hasilyears').innerHTML = years;
+        document.getElementById('hasilemail').innerHTML = email;
+
+        
+    }
+</script>
 </html>
